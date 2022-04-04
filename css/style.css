@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+caption{
+    text-indent: -9999px;
+}
+
+table{
+    border-radius: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr, td{
+    border: 1px solid black;
+}
