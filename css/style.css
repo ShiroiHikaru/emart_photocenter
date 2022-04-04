@@ -4,6 +4,7 @@ body{
     overflow-x: hidden;
     max-width: 100vw;
     max-height: 100vh;
+    font-family: 'NanumSquare';
 }
 
 ul, li{
@@ -45,7 +46,7 @@ header nav .menu{
     background: url(../images/hamberger_tab.png) no-repeat center;
     text-indent: -9999px;
     margin: 0;
-    z-index: 9999;
+    z-index: 8000;
     display: block;
     cursor: pointer;
 }
@@ -67,7 +68,6 @@ header nav .menutab li button{
     color: #fff;
     padding: 0;
     margin: 0;
-    display: block;
     cursor: pointer;
 }
 

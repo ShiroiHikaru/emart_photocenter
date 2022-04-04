@@ -10,9 +10,9 @@ document.cookie = 'cookie2=value2; SameSite=None; Secure';
 // header 메뉴 drop
 function drop(){
     const click = document.getElementById('menutab');
-    if(click.style.display === 'block'){
-       click.style.display = 'none';
-    }else{
+    if(click.style.display === 'none'){
        click.style.display = 'block';
+    }else{
+       click.style.display = 'none';
     }
  }
