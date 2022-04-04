@@ -68,6 +68,13 @@ header nav .menutab li button{
     padding: 0;
     margin: 0;
     display: block;
+    cursor: pointer;
+}
+
+header nav .menutab li button:hover{
+    background: #ccc;
+    color: #000;
+    transition: 0.3s;
 }
 
 /* main - 메인 컨텐츠 */
