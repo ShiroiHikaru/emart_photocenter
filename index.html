@@ -12,21 +12,21 @@
     <header id="header" class="header">
         <h1 class="logo" id="logo">이마트 부천점 포토센터</h1>
         <nav id="gnb" class="gnb">
-            <h2 id="hide menu" class="menu" onclick="drop()">menu</h2>
-            <ul class="menutab menubar" id="menutab">
-                <li><button type="button" onclick="location.href='#intro'">이마트 부천점 포토센터</button></li>
-                <li><button type="button" onclick="location.href='#history'">인화장비 소개</button></li>
-                <li><button type="button" onclick="location.href='#price'">촬영 / 인화비용 안내</button></li>
-                <li><button type="button" onclick="location.href='#map'">오시는 길</button></li>
+            <button type="button" id="hide hammenu" class="hammenu" onclick="show_list()">menu</button>
+            <ul id="menu_list" class="menu_list">
+                <li><button type="button" onclick="location.href='#intro'" class="link_tap_btn">이마트 부천점 포토센터</button></li>
+                <li><button type="button" onclick="location.href='#history'" class="link_tap_btn">인화장비 소개</button></li>
+                <li><button type="button" onclick="location.href='#price'" class="link_tap_btn">촬영 / 인화비용 안내</button></li>
+                <li><button type="button" onclick="location.href='#map'" class="link_tap_btn">오시는 길</button></li>
             </ul>
         </nav>
     </header>
     <main id="container" class="container">
         <div id="topbtn" class="topbtn">
             <ul>
-                <li><button type="button" onclink="location.herf='https://www.instagram.com/emart_b_photo_4f/'">인스타그램</button></li>
-                <li><button type="button" onclink="location.herf=''">친구추가</button></li>
-                <li><button type="button" onclink="location.herf='#header'">맨위로</button></li>
+                <li><button type="button" onclink="location.herf='https://www.instagram.com/emart_b_photo_4f/'" class="insta">인스타그램</button></li>
+                <li><button type="button" onclink="location.herf=''" class="friend">친구추가</button></li>
+                <li><button type="button" onclink="location.herf='#header'" class="top">맨위로</button></li>
             </ul>
         </div>
         <section id="intro" class="intro">
