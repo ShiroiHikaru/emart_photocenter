@@ -14,6 +14,10 @@ ul, li{
     list-style: none;
 }
 
+button{
+    cursor: pointer;
+}
+
 /* header(헤더영역) */
 header{
     max-width: 100vw;
@@ -22,6 +26,7 @@ header{
     background: #1C2B59; 
     position: fixed;
     top: 0;
+    z-index: 9999;
 }
 
 header h1{
@@ -55,7 +60,6 @@ header nav .menu_list{
     margin: 0;
     padding: 0;
     display: none;
-    transition: height 1s;
 }
 
 header nav .menu_list li{
@@ -86,27 +90,52 @@ main{
     width: 100%;
     max-height: 100vh;
     height: 100%;
-    clear: both;
+    position: relative;
+    border: 4px solid #795;
+    z-index: 20;
+    margin-top: 100px;
 }
 
 /* topbtn - 오른쪽 퀵바 */
-main .topbtn{
-    width: 100%;
-    height: 100%;
-    border: 1px solid red;
+.topbtn{
     position: fixed;
+    z-index: 444;
+    height: 250px;
+    right: 50px;
+    bottom: 50px;
 }
 
 .topbtn ul{
     margin: 0;
     padding: 0;
-    position: absolute;
-    right: 50px;
-    bottom: 50px;
+}
+
+.topbtn ul li{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
 }
 
 .topbtn ul li button{
-    background: #ccc;
     width: 70px;
     height: 70px;
+    border-radius: 100%;
+    border: none;
+    display: block;
+    border: 3px solid green;
+}
+
+.topbtn ul li .insta{
+    background: url(../images/insta.svg) no-repeat center;
+    text-indent: -9999px;
+}
+
+.topbtn ul li .friend{
+    background: url(../images/kakao.svg) no-repeat center;
+    text-indent: -9999px;
+}
+
+.topbtn ul li .top{
+    background: url(../images/top.svg) no-repeat center;
+    text-indent: -9999px;
 }
