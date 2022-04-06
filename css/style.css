@@ -368,5 +368,56 @@ main{
 }
 
 #use{
-    background: tan;
+    padding-top: 100px;
+}
+
+#use .use_wrap{
+    width: 72%;
+    margin: auto;
+    border: 1px solid red;
+}
+
+#use h2{
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #1C2B59;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#use .use_wrap .use_box{
+   width: 100%;
+   background-color: #eee;
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-around;
+}
+
+#use .use_wrap .use_box div{
+    margin-top: 50px;
+    width: 300px;
+    height: 410px;
+    border: 2px solid red;
+    background: #fff;
+    text-align: center;
+}
+
+#use .use_wrap .use_box div h3{
+    font-family: jalnan;
+    color: #1C2B59;
+}
+
+
+#use .use_wrap .use_box div p{
+    width: 250px;
+    margin: auto;
+    word-break: break-all;
+}
+
+#use .use_wrap .use_box .offline .offline_icon{
+    
+    background: url(../images/offline.svg) no-repeat;
+    border: 1px solid green;
+    text-indent: -9999px;
 }
