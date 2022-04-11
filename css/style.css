@@ -369,6 +369,7 @@ main{
 
 #use{
     padding-top: 100px;
+    position: relative;
 }
 
 #use .use_wrap{
@@ -387,6 +388,7 @@ main{
 }
 
 #use .use_wrap .use_box{
+   margin-top: 50px;
    width: 100%;
    background-color: #eee;
    border-radius: 20px;
@@ -395,12 +397,12 @@ main{
 }
 
 #use .use_wrap .use_box div{
-    margin-top: 50px;
+    margin: 50px 0px 50px 0px;
     width: 300px;
     height: 410px;
-    border: 2px solid red;
     background: #fff;
     text-align: center;
+    border-radius: 20px;
 }
 
 #use .use_wrap .use_box div h3{
@@ -410,14 +412,19 @@ main{
 
 
 #use .use_wrap .use_box div p{
-    width: 250px;
+    width: 200px;
     margin: auto;
     word-break: break-all;
 }
 
-#use .use_wrap .use_box .offline .offline_icon{
-    
-    background: url(../images/offline.svg) no-repeat;
-    border: 1px solid green;
-    text-indent: -9999px;
+#use .use_wrap .use_box div .box_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+    justify-content: center;
+    width: 200px;
+    height: 310px;
+    margin: 50px;
 }
+
