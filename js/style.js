@@ -44,3 +44,5 @@ function showSlide(){
    slides[SlideIndex-1].style.display='block';
    setTimeout(showSlide, 3000);
 }
+
+// kakao map api
