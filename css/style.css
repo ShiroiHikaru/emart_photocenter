@@ -460,6 +460,7 @@ main{
 #map_wrap .info_wrap h3{
     font-family: jalnan;
     color: #1C2B59;
+    margin-top: 0;
 }
 
 #map_wrap .info_wrap .info, .vehicle{
@@ -473,4 +474,25 @@ main{
 #map_wrap .info_wrap ul{
     margin: 0;
     padding: 10;
+    width: 70%;
+}
+
+
+#map_wrap .info_wrap ul li{
+    border: 1px solid green;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#map_wrap .info_wrap ul li .colorback{
+    background: #1C2B59;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    width: 100px;
+    text-align: center;
+}
+
+#map_wrap .info_wrap ul li img{
+    border: 1px solid rebeccapurple;
 }
