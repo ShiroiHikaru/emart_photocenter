@@ -46,3 +46,9 @@ function showSlide(){
 }
 
 // kakao map api
+new daum.roughmap.Lander({
+   "timestamp" : "1649662010875",
+   "key" : "29so9",
+   "mapWidth" : "1350",
+   "mapHeight" : "500"
+}).render();

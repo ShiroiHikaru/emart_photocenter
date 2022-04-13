@@ -22,6 +22,10 @@ h2, .engsub{
     font-family: 'jalnan';
 }
 
+p{
+    margin: 0;
+}
+
 /* header(헤더영역) */
 header{
     max-width: 100vw;
@@ -432,7 +436,7 @@ main{
     width: 100%;
     height: 100%;
     background: #eee;
-    padding-top: 100px;
+    padding: 100px 0px 100px 0px;
 }
 
 #map_wrap h2{
@@ -451,10 +455,10 @@ main{
 
 #map_wrap .info_wrap{
     width: 70%;
-    border: 1px solid red;
     margin: auto;
     display: flex;
     justify-content: flex-start;
+    margin-top: 50px;
 }
 
 #map_wrap .info_wrap h3{
@@ -467,7 +471,6 @@ main{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    border: 1px solid red;
     width: 50%;
 }
 
@@ -479,20 +482,24 @@ main{
 
 
 #map_wrap .info_wrap ul li{
-    border: 1px solid green;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 5px;
 }
 
 #map_wrap .info_wrap ul li .colorback{
     background: #1C2B59;
     color: #fff;
     padding: 3px 10px 3px 10px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 20px;
     width: 100px;
     text-align: center;
 }
 
-#map_wrap .info_wrap ul li img{
-    border: 1px solid rebeccapurple;
+footer{
+    width: 100%;
+    height: 100%;
+    background: #141414;
 }
