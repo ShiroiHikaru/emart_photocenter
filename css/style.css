@@ -306,7 +306,7 @@ main{
 
 #history .emart img{
     width: 50%;
-    border-radius: 20px;
+    border-radius: 20px;;
 }
 
 #history .emart .emart_text_wrap h2{
@@ -361,7 +361,6 @@ main{
 }
 
 /* price__chat - 가격표 */
-
 #price__chat{
     width: 100%;
     margin-top: 100px;
@@ -556,6 +555,11 @@ footer .footer_box{
         word-break: break-all;
     }
 
+    #intro{
+        background: linear-gradient(180deg, #fff 50%, #eee 50%);
+        padding-top: 50px;
+    }
+
     /* 프론티어 영역 */
     #history .emart{
         width: 80%;
@@ -569,7 +573,28 @@ footer .footer_box{
     #history .emart .emart_text_wrap{
         width: 100%;
         height: 100%;
+        text-align: center;
+        margin-top: 50px;
     }
+
+    #history .emart img{
+        width: 100%;
+    }
+
+    #history .frontier{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    #history .frontier img{
+        width: 100%;
+        margin-top: 50px;
+    }
+
 
 
     /* 카카오 버튼 */
@@ -585,8 +610,30 @@ footer .footer_box{
         align-items: center;
     }
 
+
     #intro .kakao .kakaobtn button{
         width: 80%;
         margin: 20px 0px 0px 0px;
+    }
+
+    #use .use_wrap{
+        height: 100%;
+    }
+
+    #use .use_wrap .use_box{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #use .use_wrap .use_box div{
+        width: 85%;
+        border: 1px solid red;
+    }
+
+    #use .use_wrap .use_box .box_wrap{
+       width: 100%;
     }
 }
