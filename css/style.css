@@ -510,5 +510,21 @@ footer{
 footer .footer_box{
     border: 1px solid red;
     padding: 65px;
-    
+}
+
+
+/* media query 영역 */
+
+@media screen and (max-width: 768px){
+    body{
+        word-break: break-all;
+    }
+
+    #intro .kakao{
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        padding-bottom: 100px;
+        border: rebeccapurple;
+    }
 }
