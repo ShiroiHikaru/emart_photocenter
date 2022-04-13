@@ -44,3 +44,12 @@ function showSlide(){
    slides[SlideIndex-1].style.display='block';
    setTimeout(showSlide, 3000);
 }
+
+// 팝업 모달 창
+function modalOpen(){
+   document.querySelector('.kakao_pc_pop').style.display = 'block';
+}
+
+function modalClose(){
+   document.querySelector('.kakao_pc_pop').style.display = 'none';
+}

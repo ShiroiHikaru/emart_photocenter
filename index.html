@@ -51,13 +51,18 @@
                     접속환경에 맞춰 카카오톡 친구 추가 후 추가된 계정으로 인화하실 사진을 보내주시면 됩니다.<br>
                     <span>컴퓨터(Desktop)으로 접속하신 고객님께서는 PC, 모바일(핸드폰)으로 접속하신 고객님 께선 Mobile을 선택</span>
                 </p>
+                <div class="kakao_pc_pop">
+                    <div class="qrpop">
+                        <img src="images/pop.jpg" alt="" class="pop_img">
+                        <button type="button" class="closeBtn" id="closeBtn" onclick="modalClose()">팝업 창 닫기</button>
+                    </div>
+                </div>
                 <div class="kakaobtn">
-                    <button type="button" onclick=""><img src="images/monitor.svg" alt=""> 카카오톡 친구추가 - PC화면</button>
+                    <button type="button" onclick="modalOpen()"><img src="images/monitor.svg" alt=""> 카카오톡 친구추가 - PC화면</button>
                     <button type="button" onclick="window.open('http://qr.kakao.com/talk/Km1pRgYcHvqVwFWFV16S1C7qzGk-')"> 
                         <img src="images/phone.svg" alt=""> 카카오톡 친구추가 - Mobile
                     </button>
                 </div>
-                <div class="pcpop"></div>
             </div>
         </section>
         <section id="history" class="history">

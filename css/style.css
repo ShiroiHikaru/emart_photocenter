@@ -248,6 +248,40 @@ main{
     margin: 0px 15px 0px 0px;
 }
 
+/* 카카오톡 팝업 */
+#intro .kakao .kakao_pc_pop{
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0 , 0.5);
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+#intro .kakao .kakao_pc_pop .qrpop{
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 400px;
+    height: 685px;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#intro .kakao .kakao_pc_pop .qrpop .closeBtn{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background-color: #141414;
+    color: #fff;
+    cursor: pointer;
+}
 /* frontier - 인화장비 소개 */
 #history{
     margin-top: 100px;
@@ -514,8 +548,7 @@ footer .footer_box{
 
 
 /* media query 영역 */
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
     body{
         word-break: break-all;
     }
