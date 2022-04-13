@@ -44,11 +44,3 @@ function showSlide(){
    slides[SlideIndex-1].style.display='block';
    setTimeout(showSlide, 3000);
 }
-
-// kakao map api
-new daum.roughmap.Lander({
-   "timestamp" : "1649662010875",
-   "key" : "29so9",
-   "mapWidth" : "1350",
-   "mapHeight" : "500"
-}).render();
