@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    word-break: keep-all;
+    word-break: break-all;
 }
 
 body{
@@ -327,6 +327,7 @@ main{
 }
 
 #history .emart .emart_text_wrap p{
+    margin-top: 20px;
     font-size: 15px;
     line-height: 25px;
 }
@@ -377,7 +378,6 @@ main{
     margin-top: 100px;
     padding-bottom: 100px;
     background: #1C2B59;
-    
 }
 
 #price__chat h2{
@@ -385,6 +385,8 @@ main{
     text-align: center;
     padding-top: 100px;
     color: #fff;
+    margin: 0;
+    width: 100%;
 }
 
 #price__chat table{
@@ -424,59 +426,55 @@ main{
     margin-bottom: 100px;
 }
 
-#use .use_wrap{
-    width: 72%;
-    margin: auto;
-}
-
 #use h2{
-    font-size: 3rem;
-    line-height: 4rem;
+    text-align: center;
     color: #1C2B59;
+    font-size: 3rem;
     margin: 0;
-    text-align: center;
-    padding-bottom: 10px;
 }
 
-#use .use_wrap .use_box{
-   margin-top: 50px;
-   width: 100%;
-   background-color: #eee;
-   border-radius: 20px;
-   display: flex;
-   justify-content: space-around;
-}
-
-#use .use_wrap .use_box div{
-    margin: 50px 0px 50px 0px;
-    width: 300px;
-    height: 410px;
-    background: #fff;
-    text-align: center;
+#use .use_wrap{
+    background: #eee;
+    width: 72%;
+    height: 100%;
+    margin-top: 50px;
+    margin: auto;
     border-radius: 20px;
 }
 
-#use .use_wrap .use_box div h3{
-    font-family: jalnan;
-    color: #1C2B59;
-}
-
-
-#use .use_wrap .use_box div p{
-    width: 200px;
+#use .use_wrap .useBox{
+    width: 95%;
     margin: auto;
-    word-break: break-all;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-top: 50px;
 }
 
-#use .use_wrap .use_box div .box_wrap{
+#use .use_wrap .useBox .frontDesk, .talk, .em{
+    background: #fff;
+    width: 300px;
+    height: 410px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 310px;
-    margin: 50px;
+    flex-direction: column;
 }
+
+#use .use_wrap .useBox h3{
+    font-family: jalnan;
+    color: #1C2B59;
+    margin-top: 50;
+}
+
+#use .use_wrap .useBox p{
+    width: 200px;
+}
+
 
 /* 지도영역 */
 #map_wrap{
@@ -603,8 +601,11 @@ footer .footer_box{
         margin-top: 50px;
     }
 
-  
-
+    
+    #history .frontier .front_text_wrap{
+        width: 100%;
+        margin-top: 30px;
+    }
 
 
     /* 카카오 버튼 */
@@ -625,32 +626,53 @@ footer .footer_box{
         width: 80%;
         margin: 20px 0px 0px 0px;
     }
+    
 
-    #use .use_wrap{
-        height: 100%;
-    }
-
-    #use .use_wrap .use_box{
-        width: 100%;
+    /* 인화 접수 방법 */
+    #use .use_wrap .useBox{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    #use .use_wrap .use_box div{
-        width: 85%;
-    }
-
-    #use .use_wrap .use_box .box_wrap{
-       width: 550px;
-       flex: 2;
-       border: 1px solid red;
-    }
-
-    /* 지도영역 */
-    #map_wrap .map{
+    #use .use_wrap .useBox .frontDesk, .talk, .em{
+        margin-bottom: 50px;
         width: 100%;
-        margin: auto;
+        height: 350px;
+    }
+
+    #use .use_wrap .useBox p{
+        font-size: 15px;
+        width: 80%;
+        line-height: 25px;
+    }
+    
+    /* 지도영역 */
+    #map_wrap{
+        width: 100%;
+    }
+
+    #map_wrap .info_wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #map_wrap .info_wrap .info, .vehicle{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    #map_wrap .info_wrap .info ul{
+        padding: 0;
+        width: 100%;
+    }
+
+    #map_wrap .info_wrap .vehicle ul{
+        padding: 0;
+        width: 100%;
     }
 }
