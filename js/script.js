@@ -53,3 +53,6 @@ function modalOpen(){
 function modalClose(){
    document.querySelector('.kakao_pc_pop').style.display = 'none';
 }
+
+// click scroll script (top버튼)
+
