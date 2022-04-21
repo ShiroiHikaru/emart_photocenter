@@ -298,9 +298,11 @@ main{
 #history .emart .emart_text_wrap{
     width: 30%;
     height: 100%;
-    border: 2px solid red;
-    animation-name: text_Slide;
-    animation-duration: 1s;
+}
+
+.textSlide{
+    animation-name: textSlide;
+    animation-duration: 2s;
 }
 
 #history .emart img{
@@ -757,17 +759,13 @@ footer .footer_box{
     }
   }
 
-  
-@keyframes text_Slide{
+@keyframes textSlide{
     from{
-        left: 0px;
-    }
-
-    50%{
-        left: 200px;
+        left: -100px;
     }
 
     to{
-        left: 461px;
+        left: 460px;
     }
-  }
+}
+
