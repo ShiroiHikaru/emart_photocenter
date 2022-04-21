@@ -188,15 +188,6 @@ main{
     animation-duration: 2s;
   }
 
-/* animation - 애니메이션 */
-@keyframes fadeSlide {
-    from{
-      opacity: 0.4;
-    }
-    to{
-      opacity: 1;
-    }
-  }
 
 /* kakao - 카카오톡 친구추가 */
 #intro .kakao{
@@ -288,6 +279,8 @@ main{
     color: #fff;
     cursor: pointer;
 }
+
+
 /* frontier - 인화장비 소개 */
 #history{
     margin-top: 100px;
@@ -305,6 +298,9 @@ main{
 #history .emart .emart_text_wrap{
     width: 30%;
     height: 100%;
+    border: 2px solid red;
+    animation-name: text_Slide;
+    animation-duration: 1s;
 }
 
 #history .emart img{
@@ -750,3 +746,28 @@ footer .footer_box{
        border: 3px solid red;
     }
 }
+
+/* animation - 애니메이션 */
+@keyframes fadeSlide {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
+  
+@keyframes text_Slide{
+    from{
+        left: 0px;
+    }
+
+    50%{
+        left: 200px;
+    }
+
+    to{
+        left: 461px;
+    }
+  }
