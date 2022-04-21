@@ -277,7 +277,9 @@
         <section id="map_wrap" class="map_wrap">
             <h2>오시는 길</h2>
             <!-- 지도영역 -->
-            <div id="daumRoughmapContainer1649815255898" class="root_daum_roughmap root_daum_roughmap_landing map"></div>
+            <div class="mappack">
+                <div id="daumRoughmapContainer1649815255898" class="root_daum_roughmap root_daum_roughmap_landing map" style="width: 100%;"></div>
+            </div>
             <div class="info_wrap">
                 <div class="info">
                     <h3>영업안내</h3>
@@ -333,8 +335,7 @@
         new daum.roughmap.Lander({
             "timestamp" : "1649815255898",
             "key" : "29tin",
-            "mapWidth" : "1350",
-            "mapHeight" : "500"
+            "mapHeight" : "500px"
         }).render();
     </script>
 </body>
