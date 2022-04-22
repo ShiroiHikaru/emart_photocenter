@@ -57,31 +57,51 @@ function modalClose(){
 // click scroll script (top버튼)
 
 
-// animaiton
+// 애니메이션 슬라이드
 let mainText = document.querySelector('.textSlide');
 let imgSlide = document.querySelector('.emartImg');
 
+// 포토센터 소개 슬라이드
 window.addEventListener('scroll', function(){
    let value = window.scrollY;
    // 조건문
-   if(value > 1500){
-      mainText.style.animation = 'backSlide 2s ease-out forwards';
-      imgSlide.style.animation = 'imgSlide 2s ease-out forwards';
+   if(value > 2000){
+      mainText.style.animation = 'leftBlind 2s ease-out forwards';
+      imgSlide.style.animation = 'rightBlind 2s ease-out forwards';
    }else{
-      mainText.style.animation = 'leftSlide 2s ease-out';
-      imgSlide.style.animation = 'rightSide 2s ease-out';
+      mainText.style.animation = 'leftS 2s ease-out';
+      imgSlide.style.animation = 'rightS 2s ease-out';
    }
 });
 
+// 프론티어 장비소개 슬라이드
 let frontierText = document.querySelector('.frontText');
 let frontImg = document.querySelector('.frontImg');
 
 window.addEventListener('scroll', function(){
    let front = window.scrollY;
-   console.log('scrollY'.value);
    // 조건문
+   if(front > 2600){
+      frontierText.style.animation = 'rightBlind 2s ease-out forwards'
+      frontImg.style.animation = 'leftBlind 2s ease-out forwards'
+   }else{
+      frontierText.style.animation = 'rightS 2s ease-out'
+      frontImg.style.animation = 'leftS 2s ease-out'
+   }
+});
 
+// 맨위 탑타이틀 슬라이드
+let topTitle = document.querySelector('.title');
 
+window.addEventListener('scroll', function(){
+   let Hello = window.scrollY;
+   console.log('scrollY'.Hello);
+   // 조건문
+   if(Hello > 36){
+      topTitle.style.animation = 'HelloBlind 2s ease-out forwards'
+   }else{
+      topTitle.style.animation = 'HelloTitle 2s ease-out'
+   }
 });
 
 

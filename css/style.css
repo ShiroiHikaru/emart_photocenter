@@ -165,6 +165,9 @@ main{
     font-size: 4rem;
     line-height: 5rem;
     color: #1C2B59;
+    position: relative;
+    animation-name: HelloTitle;
+    animation-duration: 2s ease-out; 
 }
 
 #intro .intro_wrap .slider{
@@ -281,7 +284,7 @@ main{
 }
 
 
-/* frontier - 인화장비 소개 */
+/* history - 인화장비 소개 */
 #history{
     margin-top: 100px;
     position: relative;
@@ -300,7 +303,7 @@ main{
     position: relative;
     width: 30%;
     height: 100%;
-    animation-name: leftSlide;
+    animation-name: leftS;
     animation-duration: 2s ease-out;
 }
 
@@ -308,7 +311,7 @@ main{
     position: relative;
     width: 50%;
     border-radius: 20px;
-    animation-name: rightSlide;
+    animation-name: rightS;
     animation-duration: 2s ease-out;
 }
 
@@ -331,6 +334,7 @@ main{
     line-height: 25px;
 }
 
+/* 인화장비 소개 */
 #history .frontier{
     width: 80%;
     display: flex;
@@ -342,17 +346,20 @@ main{
 }
 
 
-#history .frontier .front_text_wrap {
+#history .frontier .front_text_wrap{
     width: 30%;
     height: 100%;
     position: relative;
-    animation-name: leftSlide;
+    animation-name: rightS;
     animation-duration: 2s ease-out;
 }
 
 #history .frontier img{
     width: 50%;
     border-radius: 20px;
+    position: relative;
+    animation-name: leftS;
+    animation-duration: 2s ease-out;
 }
 
 #history .frontier .front_text_wrap h2{
@@ -755,6 +762,7 @@ footer .footer_box{
 }
 
 /* animation - 애니메이션 */
+/* 메인 fade */
 @keyframes fadeSlide {
     from{
       opacity: 0;
@@ -764,70 +772,73 @@ footer .footer_box{
     }
   }
 
-/* 좌측슬라이드 */
-@keyframes leftSlide{
+/* 왼쪽 슬라이드 */
+@keyframes leftS{
     from{
-        left: -400px;
+        left: -1000px;
         opacity: 0;
-    } 
+    }
 
     to{
-        left: 0px;
+        left: 0;
         opacity: 1;
     }
 }
 
-/* 우측슬라이드 */
-@keyframes rightSlide{
+@keyframes leftBlind{
     from{
-        right: -600px;
-        opacity: 0;
-    } 
+        left: 0;
+        opacity: 1;
+    }
 
+    to{
+        left: -1000px;
+        opacity: 0;
+    }
+}
+
+/* 오른쪽 슬라이드 */
+@keyframes rightS{
+    from{
+        right: -1000px;
+        opacity: 0;
+    }
     to{
         right: 0px;
         opacity: 1;
-
     }
 }
 
-/* 슬라이드 사라지기 */
-@keyframes backSlide{
-    from{
-        left: 0px;
-        opacity: 1;
-    }
-
-    to{
-        left: -400px;
-        opacity: 0;
-    }
-}
-/* 이미지 슬라이드 */
-@keyframes imgSlide{
+@keyframes rightBlind{
     from{
         right: 0px;
         opacity: 1;
     }
-
     to{
-        right: -600px;
+        right: -1000px;
         opacity: 0;
     }
 }
 
-
-
-/* 프론티어 애니메이션 - frontier animation */
-
-@keyframes frontierImg{
+/* 타이틀 슬라이드 */
+@keyframes HelloTitle{
     from{
-        left: -600px;
+        top: -200px;
         opacity: 0;
     }
-
     to{
-        left: 0px;
+        top: 0;
         opacity: 1;
+    }
+}
+
+@keyframes HelloBlind{
+    from{
+        top: 0;
+        opacity: 1;
+    }
+    to{
+        top: -200px;
+        opacity: 0;
     }
 }
