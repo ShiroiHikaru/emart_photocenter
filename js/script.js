@@ -56,3 +56,34 @@ function modalClose(){
 
 // click scroll script (top버튼)
 
+
+// animaiton
+let mainText = document.querySelector('.textSlide');
+let imgSlide = document.querySelector('.emartImg');
+
+window.addEventListener('scroll', function(){
+   let value = window.scrollY;
+   // 조건문
+   if(value > 1500){
+      mainText.style.animation = 'backSlide 2s ease-out forwards';
+      imgSlide.style.animation = 'imgSlide 2s ease-out forwards';
+   }else{
+      mainText.style.animation = 'leftSlide 2s ease-out';
+      imgSlide.style.animation = 'rightSide 2s ease-out';
+   }
+});
+
+let frontierText = document.querySelector('.frontText');
+let frontImg = document.querySelector('.frontImg');
+
+window.addEventListener('scroll', function(){
+   let front = window.scrollY;
+   console.log('scrollY'.value);
+   // 조건문
+
+
+});
+
+
+
+

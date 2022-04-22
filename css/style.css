@@ -284,6 +284,7 @@ main{
 /* frontier - 인화장비 소개 */
 #history{
     margin-top: 100px;
+    position: relative;
 }
 
 #history .emart{
@@ -296,18 +297,19 @@ main{
 }
 
 #history .emart .emart_text_wrap{
+    position: relative;
     width: 30%;
     height: 100%;
-}
-
-.textSlide{
-    animation-name: textSlide;
-    animation-duration: 2s;
+    animation-name: leftSlide;
+    animation-duration: 2s ease-out;
 }
 
 #history .emart img{
+    position: relative;
     width: 50%;
-    border-radius: 20px;;
+    border-radius: 20px;
+    animation-name: rightSlide;
+    animation-duration: 2s ease-out;
 }
 
 #history .emart .emart_text_wrap h2{
@@ -759,13 +761,54 @@ footer .footer_box{
     }
   }
 
-@keyframes textSlide{
+/* 좌측슬라이드 */
+@keyframes leftSlide{
     from{
-        left: -100px;
-    }
+        left: -400px;
+        opacity: 0;
+    } 
 
     to{
-        left: 460px;
+        left: 0px;
+        opacity: 1;
     }
 }
 
+/* 우측슬라이드 */
+@keyframes rightSlide{
+    from{
+        right: -600px;
+        opacity: 0;
+    } 
+
+    to{
+        right: 0px;
+        opacity: 1;
+
+    }
+}
+
+/* 슬라이드 사라지기 */
+@keyframes backSlide{
+    from{
+        left: 0px;
+        opacity: 1;
+    }
+
+    to{
+        left: -400px;
+        opacity: 0;
+    }
+}
+
+@keyframes imgSlide{
+    from{
+        right: 0px;
+        opacity: 1;
+    }
+
+    to{
+        right: -520px;
+        opacity: 0;
+    }
+}
