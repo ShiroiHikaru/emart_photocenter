@@ -429,6 +429,7 @@ main{
     font-weight: bold;
 }
 
+/* 인화접수 방법 */
 #use{
     padding-top: 100px;
     position: relative;
@@ -482,6 +483,24 @@ main{
 
 #use .use_wrap .useBox p{
     width: 200px;
+}
+
+#use .use_wrap .useBox .frontDesk{
+    position: relative;
+    animation: secTionSlide1;
+    animation-duration: 2s ease-out;
+}
+
+#use .use_wrap .useBox .talk{
+    position: relative;
+    animation: secTionSlide2;
+    animation-duration: 2s ease-out;
+}
+
+#use .use_wrap .useBox .em{
+    position: relative;
+    animation: secTionSlide3;
+    animation-duration: 2s ease-out;
 }
 
 
@@ -839,6 +858,79 @@ footer .footer_box{
     }
     to{
         top: -200px;
+        opacity: 0;
+    }
+}
+
+/* 인화접수 방법 애니메이션 */
+@keyframes secTionSlide1{
+    from{
+        top: -900px;
+        opacity: 0;
+    }
+
+    to{
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes secTionBlind1{
+    from{
+        top: 0px;
+        opacity: 1;
+    }
+
+    to{
+        top: -900px;
+        opacity: 0;
+    }
+}
+
+@keyframes secTionSlide2{
+    from{
+        top: -600px;
+        opacity: 0;
+    }
+
+    to{
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes secTionBlind2{
+    from{
+        top: 0px;
+        opacity: 1;
+    }
+
+    to{
+        top: -600px;
+        opacity: 0;
+    }
+}
+
+@keyframes secTionSlide3{
+    from{
+        top: -300px;
+        opacity: 0;
+    }
+
+    to{
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes secTionBlind3{
+    from{
+        top: 0px;
+        opacity: 1;
+    }
+
+    to{
+        top: -300px;
         opacity: 0;
     }
 }

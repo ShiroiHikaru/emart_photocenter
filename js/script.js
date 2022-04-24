@@ -104,6 +104,39 @@ window.addEventListener('scroll', function(){
    }
 });
 
+// 인화접수방법 슬라이드
+
+let SectionDesk = document.querySelector('.frontDesk');
+let KakaoTalk = document.querySelector('.talk');
+let EmAdd = document.querySelector('.em');
+window.addEventListener('scroll', function(){
+   let Desk = window.scrollY;
+   let talk = window.scrollY;
+   let em = window.scrollY;
+   console.log('scrollY', Desk);
+
+   // 조건문
+   if(Desk > 5505){
+      SectionDesk.style.animation = 'secTionBlind1 2s ease-out forwards'
+   }else{
+      SectionDesk.style.animation = 'secTionSlide1 2s ease-out'
+   }
+
+   // 조건문
+   if(talk > 5505){
+      KakaoTalk.style.animation = 'secTionBlind2 2s ease-out forwards'
+   }else{
+      KakaoTalk.style.animation = 'secTionSlide2 2s ease-out'
+   }
+
+   // 조건문
+   if(em > 5505){
+      EmAdd.style.animation = 'secTionBlind3 2s ease-out forwards'
+   }else{
+      EmAdd.style.animation = 'secTionSlide3 2s ease-out'
+   }
+});
+
 
 
 
