@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/911513e2e2.js" crossorigin="anonymous"></script>
     <title>이마트부천점 포토센터</title>
 </head>
@@ -57,24 +58,25 @@
                     <span>컴퓨터(Desktop)으로 접속하신 고객님께서는 PC, 모바일(핸드폰)으로 접속하신 고객님 께선 Mobile을 선택</span>
                 </p>
                 <div class="kakaobtn">
-                    <button type="button" onclick="modalOpen()"><img src="images/monitor.svg" alt=""> 카카오톡 친구추가 - PC화면</button>
+                    <button type="button" id="open" class="open"><img src="images/monitor.svg" alt=""> 카카오톡 친구추가 - PC화면</button>
                     <button type="button" onclick="window.open('http://qr.kakao.com/talk/Km1pRgYcHvqVwFWFV16S1C7qzGk-')"> 
                         <img src="images/phone.svg" alt=""> 카카오톡 친구추가 - Mobile
                     </button>
                 </div>
             </div>
-        </section>
-        <!-- 팝업영역 -->
-        <div class="modal-container" id="modal">
-            <div class="modal">
-                <button class="close-btn" id="fold" type="button">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-                <div class="qrpop">
+
+            <div id="modal-container" class="modal-container">
+                <div id="close-container" class="close-container">
+                    <button id="close" class="close">
+                        <i class="fa-solid fa-xmark fa-2x"></i>
+                    </button>
+                </div>
+                <div class="modal">
                     <img src="images/pop.jpg" alt="">
                 </div>
             </div>
-        </div>
+        
+        </section>
         <!-- 히스토리 영역 -->
         <section id="history" class="history">
             <div id="emart" class="emart">

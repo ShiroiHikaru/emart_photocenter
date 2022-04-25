@@ -45,14 +45,7 @@ function showSlide(){
    setTimeout(showSlide, 3000);
 }
 
-// 팝업 모달 창
-function modalOpen(){
-   document.querySelector('.kakao_pc_pop').style.display = 'block';
-}
 
-function modalClose(){
-   document.querySelector('.kakao_pc_pop').style.display = 'none';
-}
 
 // click scroll script (top버튼)
 
@@ -138,5 +131,22 @@ window.addEventListener('scroll', function(){
 });
 
 
+// 모달창 외부 클릭으로 닫기
+// 팝업 열기
 
+const modal = document.querySelector('.modal-container');
+const fold = document.querySelector('.close');
+const pcQRopen = document.querySelector('.open');
+const bgClose = document.querySelector('.modal-container');
 
+pcQRopen.addEventListener('click', function(){
+   modal.classList.add('bg-active');
+});
+
+fold.addEventListener('click', function(){
+   modal.classList.remove('bg-active');
+});
+
+bgClose.addEventListener('click', function(){
+   modal.classList.remove('bg-active');
+})

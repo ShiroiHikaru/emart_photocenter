@@ -8,7 +8,7 @@ body{
     padding: 0;
     overflow-x: hidden;
     max-width: 100vw;
-    max-height: 100vh;
+    min-height: 100vh;
     font-family: 'NanumSquare';
 }
 
@@ -36,7 +36,7 @@ header{
     background: #1C2B59; 
     position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index: 9000;
 }
 
 header h1{
@@ -248,42 +248,41 @@ main{
 }
 
 /* 카카오톡 팝업 */
-#intro .kakao .kakao_pc_pop{
-    max-width: 100vw;
-    max-height: 100vh;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0 , 0.7);
+.modal-container{
+    background: rgba(0, 0, 0, 0.7);
     position: fixed;
-    z-index: 9999;
     top: 0;
     left: 0;
-    display: none;
-}
-
-#intro .kakao .kakao_pc_pop .qrpop{
-    max-width: 100vw;
-    max-height: 100vh;
-    width: 400px;
-    height: 685px;
-    margin: auto;
-    margin-top: 200px;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s opacity 0.5s;
 }
 
-#intro .kakao .kakao_pc_pop .qrpop .closeBtn{
+.bg-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-container .close-container{
+    overflow: hidden;
     width: 400px;
-    height: 50px;
+    background-color: #3b1d1d;
+    display: flex;
+    justify-content: flex-end;
+} 
+
+.modal-container .close-container button{
+    background: #3b1d1d;
     border: none;
-    background-color: #141414;
     color: #fff;
-    cursor: pointer;
 }
-
-
 /* history - 인화장비 소개 */
 #history{
     margin-top: 100px;
@@ -593,11 +592,12 @@ footer .footer_box{
 
 /* media query 영역 */
 @media screen and (max-width: 1200px){
+    
 
     /* 퀵바버튼 */
     .topbtn{
         width: 100%;
-        height: 100px;
+        height: 50px;
         position: fixed;
         margin: auto;
         left: 0;
@@ -617,7 +617,7 @@ footer .footer_box{
 
     .topbtn ul li button{
         width: 100%;
-        height: 100px;
+        height: 30px;
         border: none;
         border-radius: 0px;
         color: #fff;
