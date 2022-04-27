@@ -25,13 +25,9 @@
     </header>
     <section id="topbtn" class="topbtn">
         <ul>
-            <li>
-                <button type="button" onclick="window.open='https://www.instagram.com/emart_b_photo_4f/'" class="insta controlBtn">
-                    인스타그램
-                </button>
-            </li>
-            <li><button type="button" onclick="location.herf='#intro'" class="friend controlBtn">친구추가</button></li>
-            <li><button type="button" onclick="location.herf='#slider'" class="top controlBtn">맨위로</button></li>
+            <li><button type="button" onclick="Instagram()" class="insta controlBtn">인스타그램</button></li>
+            <li><button type="button" onclick="window.scroll(0, 720)" class="friend controlBtn">친구추가</button></li>
+            <li><button type="button" onclick="window.scrollTo(0,0);" class="top controlBtn">맨위로</button></li>
         </ul>
     </section>
     <main id="container" class="container">
@@ -59,7 +55,7 @@
                 </p>
                 <div class="kakaobtn">
                     <button type="button" id="open" class="open"><img src="images/monitor.svg" alt=""> 카카오톡 친구추가 - PC화면</button>
-                    <button type="button" onclick="window.open('http://qr.kakao.com/talk/Km1pRgYcHvqVwFWFV16S1C7qzGk-')"> 
+                    <button type="button" onclick="goToMobile()" id="mobile" class="mobile"> 
                         <img src="images/phone.svg" alt=""> 카카오톡 친구추가 - Mobile
                     </button>
                 </div>

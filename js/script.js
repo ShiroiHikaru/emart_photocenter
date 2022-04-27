@@ -106,7 +106,6 @@ window.addEventListener('scroll', function(){
    let Desk = window.scrollY;
    let talk = window.scrollY;
    let em = window.scrollY;
-   console.log('scrollY', Desk);
 
    // 조건문
    if(Desk > 5505){
@@ -150,3 +149,27 @@ fold.addEventListener('click', function(){
 bgClose.addEventListener('click', function(){
    modal.classList.remove('bg-active');
 })
+
+
+// 링크연결 함수
+const star = document.querySelector('.insta');
+const kaTalkMobile = document.querySelector('.mobile');
+
+// 카카오톡 버튼 영역
+const KakaoSection = document.getElementById('kakao');
+
+// 인스타그램 링크
+function Instagram(){
+   star.addEventListener('click', function(){
+      window.open('https://www.instagram.com/emart_b_photo_4f/', 'Buchone_PhotoCenter');
+   });
+}; 
+
+// 카카오톡 모바일 링크
+function goToMobile(){
+   kaTalkMobile.addEventListener('click', function(){
+      window.open('http://qr.kakao.com/talk/Km1pRgYcHvqVwFWFV16S1C7qzGk-')
+   });
+};
+
+// 카톡 슬라이드

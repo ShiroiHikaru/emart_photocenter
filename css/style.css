@@ -263,6 +263,7 @@ main{
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s opacity 0.5s;
+    cursor: pointer;
 }
 
 .bg-active{
