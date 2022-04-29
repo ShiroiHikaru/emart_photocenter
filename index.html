@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="yes">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <!-- fontawesome -->
@@ -48,7 +48,7 @@
             </div>
         
             <div id="kakao" class="kakao ClickArea" id="QRpopDisplay">
-                <h2>인화사진 접수 신청</h2>
+                <h2 id="Receipt" class="Receipt">인화사진 접수 신청</h2>
                 <p>
                     접속환경에 맞춰 카카오톡 친구 추가 후 추가된 계정으로 인화하실 사진을 보내주시면 됩니다.<br>
                     <span>컴퓨터(Desktop)으로 접속하신 고객님께서는 PC, 모바일(핸드폰)으로 접속하신 고객님 께선 Mobile을 선택</span>
@@ -78,7 +78,7 @@
             <div id="emart" class="emart">
                 <img src="images/main3.jpg" alt="" class="emartImg">
                 <div id="emart_text_wrap textSlide" class="emart_text_wrap textSlide">
-                    <h2>이마트 부천점<br>포토센터는</h2>
+                    <h2 id="center" class="center">이마트 부천점<br>포토센터는</h2>
                     <span id="engsub" class="engsub">Emart  Bucheon PhotoCenter</span>
                     <p>
                         이마트 부천점 사진관은 단순한 잉크젯 프린트가 아닌
@@ -87,10 +87,11 @@
                     </p>
                 </div>
             </div>
+            <!-- 프론티어 기계소개 -->
             <div id="frontier" class="frontier">
                 <img src="images/frontier.jpg" alt="" class="frontImg">
                 <div id="front_text_wrap" class="front_text_wrap frontText">
-                    <h2>인화장비 소개</h2>
+                    <h2 id="machine" class="machine">인화장비 소개</h2>
                     <span id="engsub" class="engsub">frontier 570</span>
                     <p>
                         이마트 부천점 포토센터에서 사용하는 Frontier 570은
@@ -109,8 +110,8 @@
         </section>
         <section id="price__chat" class="price__chat">
             <h2>촬영 / 인화 비용 안내</h2>
-            <table style="border: 1px solid red;">
-                <caption>촬영 / 인화 비용 안내</caption>
+            <table>
+                <caption id="price_title" class="price_title">촬영 / 인화 비용 안내</caption>
                 <tbody>
                     <tr>
                         <td class="chat__title chat__section" colspan="2">미디어 기본 요금 (최소 10장 이상) - 3,500원</td>
@@ -262,7 +263,7 @@
             </table>
         </section>
         <section id="use" class="use">
-            <h2>인화 접수방법</h2>
+            <h2 id="howto" class="howto">인화 접수방법</h2>
            <div class="use_wrap">
                 <div class="useBox">
                     <div class="frontDesk">
@@ -284,7 +285,7 @@
            </div>
         </section>
         <section id="map_wrap" class="map_wrap">
-            <h2>오시는 길</h2>
+            <h2 id="visit" class="visit">오시는 길</h2>
             <!-- 지도영역 -->
             <div class="mappack">
                 <div id="daumRoughmapContainer1649815255898" class="root_daum_roughmap root_daum_roughmap_landing map" style="width: 100%;"></div>

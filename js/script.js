@@ -98,7 +98,6 @@ window.addEventListener('scroll', function(){
 });
 
 // 인화접수방법 슬라이드
-
 let SectionDesk = document.querySelector('.frontDesk');
 let KakaoTalk = document.querySelector('.talk');
 let EmAdd = document.querySelector('.em');
@@ -151,12 +150,9 @@ bgClose.addEventListener('click', function(){
 })
 
 
-// 링크연결 함수
+// 링크연결 변수
 const star = document.querySelector('.insta');
 const kaTalkMobile = document.querySelector('.mobile');
-
-// 카카오톡 버튼 영역
-const KakaoSection = document.getElementById('kakao');
 
 // 인스타그램 링크
 function Instagram(){
@@ -172,4 +168,3 @@ function goToMobile(){
    });
 };
 
-// 카톡 슬라이드

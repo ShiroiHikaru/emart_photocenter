@@ -70,6 +70,8 @@ header nav .menu_list{
     margin: 0;
     padding: 0;
     display: none;
+    transform: translate(0,0);
+    transition: all 1s;
 }
 
 header nav .menu_list li{
@@ -593,12 +595,15 @@ footer .footer_box{
 
 /* media query 영역 */
 @media screen and (max-width: 1200px){
-    
-
     /* 퀵바버튼 */
+    h2{
+        font-family: 'yg-jalnan'!important;
+        font-size: 30px;
+    }
+
     .topbtn{
         width: 100%;
-        height: 50px;
+        height: 100px;
         position: fixed;
         margin: auto;
         left: 0;
@@ -618,7 +623,7 @@ footer .footer_box{
 
     .topbtn ul li button{
         width: 100%;
-        height: 30px;
+        height: 100px;
         border: none;
         border-radius: 0px;
         color: #fff;
@@ -655,8 +660,23 @@ footer .footer_box{
 
     /* 인트로 */
     #intro{
-        background: linear-gradient(180deg, #fff 50%, #eee 50%);
+        background: linear-gradient(180deg, #fff 40%, #eee 60%);
         padding-top: 50px;
+    }
+
+    #intro .intro_wrap .title{
+        width: 100%;
+        font-size: 50px;
+    }
+
+
+    /* 카카오BTN */
+    #kakao h2{
+        width: 60%;
+        margin: auto;
+    }
+    #kakao .kakaobtn button{
+        color: #000;
     }
 
     /* 프론티어 영역 */
@@ -674,6 +694,11 @@ footer .footer_box{
         height: 100%;
         text-align: center;
         margin-top: 50px;
+    }
+
+    #history .emart .emart_text_wrap .engsub{
+        font-size: 18px;
+        font-family: 'yg-jalnan';
     }
 
     #history .emart img{
@@ -702,6 +727,12 @@ footer .footer_box{
         margin-top: 30px;
     }
 
+    
+
+    #history .frontier .front_text_wrap .engsub{
+        font-size: 18px;
+        font-family: 'yg-jalnan';
+    }
 
     /* 카카오 버튼 */
     #intro .kakao{
@@ -721,8 +752,11 @@ footer .footer_box{
         width: 80%;
         margin: 20px 0px 0px 0px;
     }
-    
 
+    /* 가격표 */
+    #price_chat{
+        background-color: pink; 
+    }   
     /* 인화 접수 방법 */
     #use .use_wrap .useBox{
         display: flex;
@@ -776,10 +810,10 @@ footer .footer_box{
     }
 
     /* footer */
-    #footer .footer_box{
-       border: 3px solid red;
-    }
+   
 }
+
+
 
 /* animation - 애니메이션 */
 /* 메인 fade */
@@ -791,6 +825,8 @@ footer .footer_box{
       opacity: 1;
     }
   }
+
+
 
 /* 왼쪽 슬라이드 */
 @keyframes leftS{
