@@ -701,6 +701,12 @@ footer .footer_box{
         font-family: 'yg-jalnan';
     }
 
+    #history .emart .emart_text_wrap h2{
+        width: 100%;
+        line-height: 40px;
+        font-size: 30px;
+    }
+
     #history .emart img{
         width: 100%;
     }
@@ -727,6 +733,12 @@ footer .footer_box{
         margin-top: 30px;
     }
 
+    #history .frontier .front_text_wrap h2{
+        width: 100%;
+        line-height: 40px;
+        font-size: 30px;
+    }
+
     
 
     #history .frontier .front_text_wrap .engsub{
@@ -735,9 +747,15 @@ footer .footer_box{
     }
 
     /* 카카오 버튼 */
+    
     #intro .kakao{
         width: 100%;
         height: 100%;
+    }
+
+    #intro .kakao h2{
+        width: 100%;
+        font-size: 30px;
     }
 
     #intro .kakao .kakaobtn{
@@ -754,15 +772,28 @@ footer .footer_box{
     }
 
     /* 가격표 */
-    #price_chat{
-        background-color: pink; 
-    }   
+    #price__chat h2{
+        font-size: 30px;
+    }
+    
+    #price__chat table{
+        width: 90%;
+    }
     /* 인화 접수 방법 */
+    #use h2{
+        font-size: 30px;
+    }
+
+    #use .use_wrap{
+        width: 90%;
+    }
+
     #use .use_wrap .useBox{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding: 10%;
     }
 
     #use .use_wrap .useBox .frontDesk, .talk, .em{
@@ -782,6 +813,10 @@ footer .footer_box{
         width: 100%;
     }
 
+    #map_wrap h2{
+        font-size: 30px;
+    }
+
     #map_wrap .info_wrap{
         width: 100%;
         display: flex;
@@ -791,7 +826,7 @@ footer .footer_box{
     #map_wrap .info_wrap .info, .vehicle{
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
 
@@ -810,6 +845,25 @@ footer .footer_box{
     }
 
     /* footer */
+    footer{
+        width: 100%;
+        height: 320px;
+        position: absolute;
+        z-index: 9970;
+    }
+
+    footer .footer_box{
+        padding: 0;
+        width: 74%;
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    footer .footer_box .footer_wrap{
+        height: 100%;
+        padding: 0;
+    }
    
 }
 
