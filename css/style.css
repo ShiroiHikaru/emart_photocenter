@@ -660,7 +660,7 @@ footer .footer_box{
 
     /* 인트로 */
     #intro{
-        background: linear-gradient(180deg, #fff 40%, #eee 60%);
+        background: linear-gradient(to top 180deg, #fff 30%, #eee 70%);
         padding-top: 50px;
     }
 
