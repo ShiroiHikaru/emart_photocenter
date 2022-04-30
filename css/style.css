@@ -224,7 +224,7 @@ main{
 }
 
 #intro .kakao .kakaobtn{
-    width: 70%;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -232,7 +232,7 @@ main{
 }
 
 #intro .kakao .kakaobtn button{
-    width: calc(1050px / 2);
+    width: calc(100% / 2.1);
     height: 100px;
     border-radius: 20px;
     border: none;
@@ -675,6 +675,7 @@ footer .footer_box{
         width: 60%;
         margin: auto;
     }
+
     #kakao .kakaobtn button{
         color: #000;
     }
