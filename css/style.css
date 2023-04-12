@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
 *{
     box-sizing: border-box;
     word-break: break-all;
@@ -133,7 +141,6 @@ main{
     border-radius: 100%;
     border: none;
     display: block;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .topbtn ul li .insta{
