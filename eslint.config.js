@@ -16,6 +16,7 @@ export default defineConfig([
     },
     extends: ['js/recommended'],
     rules: {
+      camelcase: ['warn', { properties: 'always' }],
       'no-unused-vars': 'warn',
       'no-undef': 'warn',
       'arrow-body-style': 'off',
