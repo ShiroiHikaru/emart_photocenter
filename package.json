@@ -1,9 +1,14 @@
 {
+  "node": "v20.16.0",
   "type": "module",
+  "exports": "./index.js",
   "devDependencies": {
     "@eslint/js": "^9.23.0",
     "eslint": "^9.23.0",
     "globals": "^16.0.0",
-    "prettier": "3.5.3"
+    "prettier": "3.5.3",
+    "stylelint": "^16.17.0",
+    "stylelint-config-recess-order": "^6.0.0",
+    "stylelint-declaration-strict-value": "^1.10.11"
   }
 }

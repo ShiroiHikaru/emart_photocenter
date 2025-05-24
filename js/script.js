@@ -1,5 +1,3 @@
-'use strict';
-
 // samesite cookies
 
 // Set a same-site cookie for first-party contexts
