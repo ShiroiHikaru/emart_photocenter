@@ -1,5 +1,4 @@
 <div align = center>
-  <img src="/images/kakaochanel.jpg" width="200px" height="200px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
   <h1> 📸EmartPhotocenter 3차 RESET!(최종)📸</h1>
   
   ### 제작개요
