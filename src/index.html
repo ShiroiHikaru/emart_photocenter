@@ -10,6 +10,9 @@
     <script src="https://kit.fontawesome.com/911513e2e2.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet" />
     <title>이마트부천점 포토센터</title>
   </head>
   <body>
@@ -41,16 +44,16 @@
     <main id="container" class="container">
       <section id="intro" class="intro">
         <div class="intro_wrap">
-          <h2 id="title" class="title">반갑습니다.<br />이마트 부천점 포토센터입니다.</h2>
+          <h2 id="title" class="title black-han-sans-regular">반갑습니다.<br />이마트 부천점 포토센터입니다.</h2>
           <div id="slider" class="slider">
             <div class="slider__item fade">
-              <img src="images/main1.jpg" alt="" />
+              <img src="images/main1.jpg" alt="사진관 전경1" />
             </div>
             <div class="slider__item fade">
-              <img src="images/main2.jpg" alt="" />
+              <img src="images/main2.jpg" alt="사진관 전경2" />
             </div>
             <div class="slider__item fade">
-              <img src="images/main3.jpg" alt="" />
+              <img src="images/main3.jpg" alt="사진관 전경3" />
             </div>
           </div>
         </div>
@@ -65,10 +68,13 @@
           </p>
           <div class="kakaobtn">
             <button type="button" id="open" class="open">
-              <img src="images/monitor.svg" alt="" /> 카카오톡 친구추가 - PC화면
+              <img src="images/monitor.svg" alt="모니터 아이콘" aria-hidden="true" /> 카카오톡 친구추가 - PC화면
             </button>
             <button type="button" onclick="goToMobile()" id="mobile" class="mobile">
-              <img src="images/phone.svg" alt="" /> 카카오톡 친구추가 - Mobile
+              <img src="images/phone.svg" alt="핸드폰 아이콘" aria-hidden="true" /> 카카오톡 친구추가 - Mobile
+            </button>
+            <button type="button" onclick="goTobisness()" id="mobile-bisness" class="mobile-bs">
+              <img src="images/phone.svg" alt="핸드폰 아이콘" aria-hidden="true" /> 카카오 비즈니스 채널 - Mobile
             </button>
           </div>
         </div>
@@ -80,7 +86,7 @@
             </button>
           </div>
           <div class="modal">
-            <img src="images/pop.jpg" alt="" />
+            <img src="images/pop.jpg" alt="카카오톡 친구추가 QR코드" />
           </div>
         </div>
       </section>
@@ -97,20 +103,15 @@
             </p>
           </div>
         </div>
-        <!-- 프론티어 기계소개 -->
+        <!-- DE100 기계소개 -->
         <div id="frontier" class="frontier">
-          <img src="images/frontier.jpg" alt="" class="frontImg" />
+          <img src="images/de100.jpg" alt="인화장비 소개-DE100" class="frontImg" />
           <div id="front_text_wrap" class="front_text_wrap frontText">
             <h2 id="machine" class="machine">인화장비 소개</h2>
-            <span id="engsub" class="engsub">frontier 570</span>
+            <span id="engsub" class="engsub">DE100</span>
             <p>
-              이마트 부천점 포토센터에서 사용하는 Frontier 570은 일본 Fujifilm(이하 후지필름) 사에서 제작된 장비로 3.5 ×
-              5 사이즈 부터 12 × 18까지 다양한 사이즈의 선명한 사진을 제공하고 있습니다. 특히 Digital Minilab Frontier
-              570 모델은 고속 처리의 새로운 표준을 제시합니다.
-              <br /><br />
-              Frontier에서는 고속 레이저 노광 시스템과 후지필름의 독점적인이미지 인텔리전스(Image Intelligence) 이미지
-              처리는 순수하고, 생생한 색상을 지원하며 다양한 디지털 미디어를 처리할 수 있어 빠른 시간 내에 질 좋은
-              사진을 제공 할 수 있습니다.
+              Frontier DE100은 다양한 유형의 인화지에서 고품질 이미지를 인쇄하는 소형 잉크젯 포토 프린터입니다.<br />
+              유연한 시스템 구성으로 다양한 인쇄 제품을 지원하여 광범위한 디지털 사진 인쇄 기회를 만족시킵니다.
             </p>
           </div>
         </div>

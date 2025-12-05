@@ -63,7 +63,7 @@ window.addEventListener('scroll', function () {
   }
 });
 
-// 프론티어 장비소개 슬라이드
+// 장비소개 슬라이드
 let frontierText = document.querySelector('.frontText');
 let frontImg = document.querySelector('.frontImg');
 
@@ -148,6 +148,7 @@ bgClose.addEventListener('click', function () {
 // 링크연결 변수
 const star = document.querySelector('.insta');
 const kaTalkMobile = document.querySelector('.mobile');
+const kaTalkbs = document.querySelector('.mobile-bs');
 
 // 인스타그램 링크
 function Instagram() {
@@ -159,6 +160,12 @@ function Instagram() {
 // 카카오톡 모바일 링크
 function goToMobile() {
   kaTalkMobile.addEventListener('click', function () {
-    window.open('http://qr.kakao.com/talk/Km1pRgYcHvqVwFWFV16S1C7qzGk-');
+    window.open('https://qr.kakao.com/talk/WZmVdtMBrL4iHN2g61CMIfRmCME-');
+  });
+}
+
+function goTobisness() {
+  kaTalkbs.addEventListener('click', function () {
+    window.open('http://pf.kakao.com/_AifYn');
   });
 }

@@ -5,9 +5,23 @@
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'YeogiOttaeJalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+.black-han-sans-regular {
+  font-family: 'Black Han Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   word-break: break-all;
+  font-family: 'Pretendard-Regular';
 }
 
 body {
@@ -172,7 +186,9 @@ main {
 
 #intro .intro_wrap .title {
   position: relative;
+  font-family: 'Pretendard-Regular';
   font-size: 4rem;
+  font-weight: 900;
   line-height: 5rem;
   color: #1c2b59;
   text-align: center;
@@ -292,6 +308,11 @@ main {
   color: #ffffff;
   background: #3b1d1d;
   border: none;
+}
+
+.modal-container img {
+  inline-size: 400px;
+  block-size: auto;
 }
 /* history - 인화장비 소개 */
 #history {
